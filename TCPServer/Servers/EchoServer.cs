@@ -12,7 +12,7 @@ namespace TCPServer.Servers
     {
         protected override void TcpServerWork(StreamReader reader, StreamWriter writer)
         {
-            while (true)
+            while (true) 
             {
                 string str = reader.ReadLine();
                 writer.WriteLine(str);
