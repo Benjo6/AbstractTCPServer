@@ -1,0 +1,5 @@
+<ServerConfiguration>
+<ServerPort>1000</ServerPort>
+<ShutDownPort>1001</ShutDownPort>
+<ServerName>AbstractTCP</ServerName>
+</ServerConfiguration>

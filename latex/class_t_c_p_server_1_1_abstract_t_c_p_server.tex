@@ -1,0 +1,62 @@
+\hypertarget{class_t_c_p_server_1_1_abstract_t_c_p_server}{}\doxysection{TCPServer.\+Abstract\+TCPServer Class Reference}
+\label{class_t_c_p_server_1_1_abstract_t_c_p_server}\index{TCPServer.AbstractTCPServer@{TCPServer.AbstractTCPServer}}
+Inheritance diagram for TCPServer.\+Abstract\+TCPServer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_c_p_server_1_1_abstract_t_c_p_server}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_c_p_server_1_1_abstract_t_c_p_server_a397c3474e8411c89f54074117a246dec}{Start}} (int port)
+\begin{DoxyCompactList}\small\item\em Denne metode udføre det mest af TCP \mbox{\hyperlink{namespace_t_c_p_server_1_1_servers}{Servers}} arbejde. Alt er nærmest defineret fra at den kan tage flere clients af gange til tjekkelsen af om nogen lytter på connection før det lukker ned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_t_c_p_server_1_1_abstract_t_c_p_server_a654a3057be874a4361c483e975be0d70}{Tcp\+Server\+Work}} (Stream\+Reader reader, Stream\+Writer writer)
+\begin{DoxyCompactList}\small\item\em Tcp\+Server\+Work er en abstract metode som man skal override og tilføje den funktionalitet som man ønsker i programet. Man har på forhånd defineret metoderne Stream\+Reader og Stream\+Writer, hvilket gør at man bare skal indskrive det man ønsker systemet skal udfører \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_c_p_server_1_1_abstract_t_c_p_server_a397c3474e8411c89f54074117a246dec}\label{class_t_c_p_server_1_1_abstract_t_c_p_server_a397c3474e8411c89f54074117a246dec}} 
+\index{TCPServer.AbstractTCPServer@{TCPServer.AbstractTCPServer}!Start@{Start}}
+\index{Start@{Start}!TCPServer.AbstractTCPServer@{TCPServer.AbstractTCPServer}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void TCPServer.\+Abstract\+TCPServer.\+Start (\begin{DoxyParamCaption}\item[{int}]{port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Denne metode udføre det mest af TCP \mbox{\hyperlink{namespace_t_c_p_server_1_1_servers}{Servers}} arbejde. Alt er nærmest defineret fra at den kan tage flere clients af gange til tjekkelsen af om nogen lytter på connection før det lukker ned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Dette parameter giver muligheder for at bestemme hvilket portnummer der skal benyttes\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_c_p_server_1_1_abstract_t_c_p_server_a654a3057be874a4361c483e975be0d70}\label{class_t_c_p_server_1_1_abstract_t_c_p_server_a654a3057be874a4361c483e975be0d70}} 
+\index{TCPServer.AbstractTCPServer@{TCPServer.AbstractTCPServer}!TcpServerWork@{TcpServerWork}}
+\index{TcpServerWork@{TcpServerWork}!TCPServer.AbstractTCPServer@{TCPServer.AbstractTCPServer}}
+\doxysubsubsection{\texorpdfstring{TcpServerWork()}{TcpServerWork()}}
+{\footnotesize\ttfamily abstract void TCPServer.\+Abstract\+TCPServer.\+Tcp\+Server\+Work (\begin{DoxyParamCaption}\item[{Stream\+Reader}]{reader,  }\item[{Stream\+Writer}]{writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Tcp\+Server\+Work er en abstract metode som man skal override og tilføje den funktionalitet som man ønsker i programet. Man har på forhånd defineret metoderne Stream\+Reader og Stream\+Writer, hvilket gør at man bare skal indskrive det man ønsker systemet skal udfører 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reader} & reader er en Stream\+Reader som dermed aflæser tegn fra byte stream\\
+\hline
+{\em writer} & writer er en Stream\+Writer som dermed omskriver tegn til byte stream\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_t_c_p_server_1_1_servers_1_1_echo_server_ab4ea35272a366c8a829f86683ac79ef4}{TCPServer.\+Servers.\+Echo\+Server}}, and \mbox{\hyperlink{class_t_c_p_server_1_1_servers_1_1_b_i_g_echo_server_ac92e5028898a15e712988735aaffa09a}{TCPServer.\+Servers.\+BIGEcho\+Server}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+TCPServer/Abstract\+TCPServer.\+cs\end{DoxyCompactItemize}
